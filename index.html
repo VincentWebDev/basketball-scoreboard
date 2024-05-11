@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-score">
+        <div class="container-score-home">
+          <h3>HOME</h3>
+          <div class="score" id="home">0</div>
+          <div class="points">
+            <button
+              class="btnPoint"
+              id="homePoints1"
+              onClick="addPoints(this.id)"
+            >
+              +1
+            </button>
+            <button
+              class="btnPoint"
+              id="homePoints2"
+              onClick="addPoints(this.id)"
+            >
+              +2
+            </button>
+            <button
+              class="btnPoint"
+              id="homePoints3"
+              onClick="addPoints(this.id)"
+            >
+              +3
+            </button>
+          </div>
+        </div>
+        <div class="container-score-guest">
+          <h3>GUEST</h3>
+          <div class="score" id="guest">0</div>
+          <div class="points">
+            <button
+              class="btnPoint"
+              id="guestPoints1"
+              onClick="addPoints(this.id)"
+            >
+              +1
+            </button>
+            <button
+              class="btnPoint"
+              id="guestPoints2"
+              onClick="addPoints(this.id)"
+            >
+              +2
+            </button>
+            <button
+              class="btnPoint"
+              id="guestPoints3"
+              onClick="addPoints(this.id)"
+            >
+              +3
+            </button>
+          </div>
+        </div>
+      </div>
+      <button id="newGame" onClick="resetCount()">New Game</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
